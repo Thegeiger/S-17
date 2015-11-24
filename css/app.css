@@ -1,0 +1,103 @@
+    html,body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #back_to_camera {
+      background: rgba(255,255,255,.9);
+      clear: both;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+    }
+    #camera_wrap_4 {
+      bottom: 0;
+      height: 90%;
+      left: 0;
+      margin-bottom: 0!important;
+      position: relative;
+      right: 0;
+      top: 1;
+    }
+    .camera_bar {
+      z-index: 2;
+    }
+    .camera_thumbs {
+      margin-top: -100px;
+      position: relative;
+      z-index: 1;
+    }
+    .camera_thumbs_cont {
+      border-radius: 0;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
+    }
+    .camera_overlayer {
+      opacity: .1;
+    }
+        body {
+          background-color: #2B2B2B;
+        }
+        .namelogo h1 {
+          color: #FF4500;
+        }
+        .nav-bar {
+          padding-top: 10px;
+        }
+        .button {
+          background-color: #FF4500;
+        }
+        .test:hover { 
+            background-color: yellow;
+        }
+        .appsec {
+          padding-top: 80px;
+          background-color: #900000;
+        }
+        .appsec h1, .appsec p, .appsec h3 {
+          color: white;
+        }
+        .rech h1, .rech p, .rech h3 {
+          color: white;
+        }
+        .rech {
+            padding-bottom: 50px;
+        }
+        hr.style-seven {
+            height: 30px;
+            border-style: solid;
+            border-color: black;
+            width: 50%;
+            margin:auto;
+            border-width: 1px 0 0 0;
+            border-radius: 20px;
+        }
+        hr.style-seven:before { /* Not really supposed to work, but does */
+            display: block;
+            content: "";
+            height: 30px;
+            margin-top: -31px;
+            border-style: solid;
+            border-color: black;
+            border-width: 0 0 1px 0;
+            border-radius: 20px;
+        }
+        .contact {
+              background-color: #900000;
+              padding-bottom: 30px;
+          }
+        .contact h1, .contact p, .contact h3 {
+          color: white;
+        }
+        .white {
+          color: white;
+        }
+        .thurmb {
+          padding-top: 30px;
+        }
+        .imgtocenter{
+          padding-left: 30px;
+        }
