@@ -57,13 +57,33 @@ enchere:
        </nav>
      </div>
       <div class="camera_wrap pattern_1" id="camera_wrap_4">
-        <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/image1.jpg">
-        </div>
-        <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/image2.jpg">
-        </div>
-        <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/image3.jpg">
-        </div>
-
+            {% case page.slider.image %}
+            
+            {% when '4' %}
+            <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="{{page.slider.bloc1.bloc_image_path}}">
+            </div>
+            <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/image2.jpg">
+            </div>
+            <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/image3.jpg">
+            </div>
+            <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/image3.jpg">
+            </div>
+            {% when '3' %}
+            <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/image1.jpg">
+            </div>
+            <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/image2.jpg">
+            </div>
+            <div data-thumb="images/slides/thumbs/road.jpg" data-src="images/slides/image3.jpg">
+            </div>
+            {% when '2' %}
+            <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/image1.jpg">
+            </div>
+            <div data-thumb="images/slides/thumbs/leaf.jpg" data-src="images/slides/image2.jpg">
+            </div>
+            {% when '1' %}
+            <div data-thumb="images/slides/thumbs/bridge.jpg" data-src="images/slides/image1.jpg">
+            </div>
+            {% endcase %}
       </div>
       <section class="appsec" id="app">
 
