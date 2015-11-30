@@ -470,6 +470,9 @@ enchere:
             {% when '4' %}
             <div class="row thurmb">
               <div class="large-3 columns">
+                {% case page.achatnormal.bloc1.bloc %}
+                
+                {% when '4' %}
                 <a class="th" role="button" aria-label="Thumbnail" target="_blank" href="{{page.achatnormal.bloc1_image_path}}" alt="{{page.achatnormal.bloc1_voiture}}">
                 <img aria-hidden=true src="{{page.achatnormal.bloc1_image_path}}" alt="{{page.achatnormal.bloc1_voiture}}" />
                 </a>
@@ -487,6 +490,7 @@ enchere:
                   <li class="price editable">2000 €</li>
                   <li class="description editable">150 000km</li>
                   <li class="bullet-item editable">2005</li>
+                  <li class="bullet-item editable">Description</li>
                   <li class="cta-button"><a class="button editable" href="#">Acheter</a></li>
                 </ul>
               </div>
