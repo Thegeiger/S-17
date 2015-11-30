@@ -11,27 +11,24 @@ slider:
 achatnormal:
   bloc: '4'
   bloc1:
-    bloc: '4'
     bloc_voiture: voiture
     bloc_image1_path: /images/slides/image1.jpg
     bloc_image2_path: /images/slides/image1.jpg
     bloc_image3_path: /images/slides/image1.jpg
     bloc_image4_path: /images/slides/image1.jpg
   bloc2:
-    bloc: '4'
+    bloc_voiture: cliot
     bloc_image_path: /images/slides/image2.jpg
     bloc_image2_path: /images/slides/image1.jpg
     bloc_image3_path: /images/slides/image1.jpg
     bloc_image4_path: /images/slides/image1.jpg
   bloc3:
-    bloc: '4'
     bloc_voiture: cliot
     bloc_image1_path: /images/slides/image1.jpg
     bloc_image2_path: /images/slides/image1.jpg
     bloc_image3_path: /images/slides/image1.jpg
     bloc_image4_path: /images/slides/image1.jpg
   bloc4:
-    bloc: '4'
     bloc_voiture: cliot
     bloc_image1_path: /images/slides/image1.jpg
     bloc_image2_path: /images/slides/image1.jpg
@@ -470,9 +467,6 @@ enchere:
             {% when '4' %}
             <div class="row thurmb">
               <div class="large-3 columns">
-                {% case page.achatnormal.bloc1.bloc %}
-                
-                {% when '4' %}
                 <a class="th" role="button" aria-label="Thumbnail" target="_blank" href="{{page.achatnormal.bloc1_image_path}}" alt="{{page.achatnormal.bloc1_voiture}}">
                 <img aria-hidden=true src="{{page.achatnormal.bloc1_image_path}}" alt="{{page.achatnormal.bloc1_voiture}}" />
                 </a>
