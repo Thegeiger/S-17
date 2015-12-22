@@ -647,6 +647,7 @@ location:
             </div>
             {% case page.location.bloc %}
   {% if page.location.activate == "true" %}
+  {% endif %}
             {% when '4' %}
             <div class="row thurmb">
               <div class="large-3 columns">
@@ -783,5 +784,4 @@ location:
             {% endcase %}
 
       </section>
-  {% endif %}
       {% include footer.html %}
