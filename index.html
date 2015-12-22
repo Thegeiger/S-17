@@ -68,7 +68,9 @@ location:
            <ul class="right">
              <li><a id="lapp" href="#app">Á propos</a></li>
              <li><a id="lrech" href="#recherche">Formulaire de recherche</a></li>
-             <li><a id="lench" href="#ench">Location</a></li>
+              {% if page.location.activate == true %}
+             <li><a id="lench" href="#location">Location</a></li>
+              {% endif %}
              <li><a id="lcontact" href="#contact">Nous contacter</a></li>
            </ul>
          </section>
@@ -640,7 +642,7 @@ location:
             {% else %}
             {% endcase %}
   {% if page.location.activate == true %}
-            <div class="row">
+            <div class="row" id="location">
               <div class="large-12 columns">
                 <h1 class="text-center">Location : </h1>
                 <p class="text-center editable">Vous souhaitez louer l'un de nos v&eacute;hicules, merci de remplir les champs "informations personnelles" dans le formulaire de contact ci-dessus. Vous pouvez &eacute;galement nous contacter pour plus d'informations.</p>
