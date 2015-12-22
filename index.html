@@ -645,9 +645,8 @@ location:
                 <p class="text-center editable">Vous souhaitez louer l'un de nos v&eacute;hicules, merci de remplir les champs "informations personnelles" dans le formulaire de contact ci-dessus. Vous pouvez &eacute;galement nous contacter pour plus d'informations.</p>
               </div>
             </div>
-            {% case page.location.bloc %}
   {% if page.location.activate == "true" %}
-  {% endif %}
+            {% case page.location.bloc %}
             {% when '4' %}
             <div class="row thurmb">
               <div class="large-3 columns">
@@ -782,6 +781,7 @@ location:
             </div>
             {% else %}
             {% endcase %}
+  {% endif %}
 
       </section>
       {% include footer.html %}
