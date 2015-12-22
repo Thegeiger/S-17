@@ -35,7 +35,7 @@ achatnormal:
     image3_path: ''
     image4_path: ''
 location:
-  activate: false
+  activate: true
   bloc: '2'
   bloc1_image_path: ''
   bloc1_voiture: voiture
@@ -639,13 +639,13 @@ location:
             </div>
             {% else %}
             {% endcase %}
+  {% if page.location.activate == true %}
             <div class="row">
               <div class="large-12 columns">
                 <h1 class="text-center">Location : </h1>
                 <p class="text-center editable">Vous souhaitez louer l'un de nos v&eacute;hicules, merci de remplir les champs "informations personnelles" dans le formulaire de contact ci-dessus. Vous pouvez &eacute;galement nous contacter pour plus d'informations.</p>
               </div>
             </div>
-  {% if page.location.activate == true %}
             {% case page.location.bloc %}
             {% when '4' %}
             <div class="row thurmb">
@@ -781,6 +781,6 @@ location:
             </div>
             {% else %}
             {% endcase %}
-  {% endif %}
       </section>
+  {% endif %}
       {% include footer.html %}
